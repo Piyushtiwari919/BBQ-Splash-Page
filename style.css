@@ -1,0 +1,136 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin:0;
+}
+
+/* -------- Typography -------- */
+
+h1{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-shadow: 0 1px aliceblue;
+}
+
+.text-dn{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e5eff1;
+    margin-bottom: 0.5rem;
+}
+
+.subheading{
+    color:orange;
+    font-weight: 700;
+    margin-bottom:1em;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.top-text { 
+    font-weight: 900;
+    text-transform: uppercase;
+    color:#e5eff1;
+    order: -1;
+    margin:0 auto;
+    border-top:3px solid #f5f2f2;
+}
+
+.intro{
+    background-color: #8e3b04;
+    margin: 0;
+    min-height: 250px;
+    padding:0 2em 1em 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:2.5em 2em 0 2em;
+    justify-content: center;
+}
+
+.main-content p{
+    font-size: 1.125rem;
+    line-height: 1.45;
+    max-width: 470px;
+}
+
+form{
+    max-width: 470px;
+}
+
+
+.fine-print {
+    font-size: 0.75rem;
+    font-family: inherit;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+main h2{
+    font-size: 2.25rem;
+    margin:0.3em 0;
+}
+
+input{
+    width:90%;
+    margin: 0 auto 1em auto;
+    border: 2px solid #807d7d;
+    border-radius: 3px;
+    font-family: inherit;
+    padding:0.8em;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #8e3b04;
+}
+.btn{
+    font-family: inherit;
+    width:90%;
+    font-family: inherit;
+    text-transform: uppercase;
+    border:none;
+    font-size: 1.15rem;
+    padding:0.4em;
+    margin: 0 auto; 
+    border-radius: 3px;
+    color:#fff;
+    cursor: pointer;
+    background-color: rgb(245, 116, 69);
+}
+.btn:hover{
+    background-color: #8e3b04;
+    cursor: pointer;
+}
+
+/*----- Media Queries -----*/
+
+@media (min-width:576px){
+    body{
+        display: flex;
+    }
+    .intro,.main-content{
+        min-height:100dvh;
+        width:50%;
+    }
+    .main-content{
+        justify-content: center;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    main h2{
+        font-size: 2.65rem;
+    }
+}
