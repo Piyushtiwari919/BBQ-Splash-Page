@@ -1,7 +1,14 @@
 const registerButton = document.querySelector(".btn")
 const registerDiv = document.querySelector(".register-div")
 registerButton.addEventListener("click",()=>{
-    registerDiv.style.display = "block";
+    inputElements.forEach((input)=>{
+        if(input.value == ""){
+            registerDiv.style.display = "none";
+        }
+        else{
+            registerDiv.style.display = "block";
+        }
+    })
     setTimeout(() => {
         registerDiv.style.display = "none";
     }, 2100);
